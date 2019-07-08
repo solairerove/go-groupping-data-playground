@@ -35,6 +35,7 @@ func MapAddExample() {
 	fmt.Println(x)
 
 	x["alena"] = 22
+	fmt.Println(x)
 
 	if v, ok := x["alena"]; ok {
 		fmt.Println(v, ok)
@@ -44,4 +45,8 @@ func MapAddExample() {
 	for k, v := range x {
 		fmt.Println(k, v)
 	}
+
+	fmt.Println("map delete")
+	delete(x, "james")
+	fmt.Println(x)
 }
