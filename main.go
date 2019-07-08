@@ -5,5 +5,6 @@ import (
 )
 
 func main() {
-	group.ArraysExample()
+	group.ArrayExample()
+	group.SliceExample()
 }

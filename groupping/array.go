@@ -4,8 +4,8 @@ import (
 	"fmt"
 )
 
-// ArraysExample tbd
-func ArraysExample() {
+// ArrayExample tbd
+func ArrayExample() {
 
 	var x [5]int
 	fmt.Println(x)
