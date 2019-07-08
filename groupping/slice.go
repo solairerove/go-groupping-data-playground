@@ -33,5 +33,12 @@ func SliceExample() {
 
 	y := []int{30, 50}
 	fmt.Println("append", y)
-	fmt.Println(append(x, y...))
+	x = append(x, y...)
+	fmt.Println(x)
+
+	// efficient compilation
+	// efficient execution
+	// "ease" of programming
+	fmt.Println("delete due append")
+	fmt.Println(append(x[:1], x[2:]...))
 }
