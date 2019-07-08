@@ -7,4 +7,5 @@ import (
 func main() {
 	group.ArrayExample()
 	group.SliceExample()
+	group.MapExample()
 }
