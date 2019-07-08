@@ -27,4 +27,11 @@ func SliceExample() {
 	fmt.Println("slicing")
 	fmt.Println(x[:])
 	fmt.Println(x[1:])
+
+	fmt.Println("append")
+	fmt.Println(append(x, 42))
+
+	y := []int{30, 50}
+	fmt.Println("append", y)
+	fmt.Println(append(x, y...))
 }
