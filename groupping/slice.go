@@ -41,4 +41,14 @@ func SliceExample() {
 	// "ease" of programming
 	fmt.Println("delete due append")
 	fmt.Println(append(x[:1], x[2:]...))
+
+	// increase capacity
+	fmt.Println("make")
+	x = make([]int, 10, 15)
+	fmt.Println(x)
+
+	x[9] = 42
+	fmt.Println(x)
+	fmt.Println(len(x))
+	fmt.Println(cap(x))
 }
