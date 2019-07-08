@@ -21,6 +21,27 @@ func MapExample() {
 	fmt.Println(v, ok)
 
 	if y, mkay := x["mikita"]; mkay {
-		fmt.Printf("printed only if map has that key %v. here's value %v", "[mikita]", y)
+		fmt.Printf("printed only if map has that key %v. here's value %v \n", "[mikita]", y)
+	}
+}
+
+// MapAddExample tbd
+func MapAddExample() {
+	x := map[string]int{
+		"james":  32,
+		"mikita": 23,
+	}
+	fmt.Println("MapAddExample")
+	fmt.Println(x)
+
+	x["alena"] = 22
+
+	if v, ok := x["alena"]; ok {
+		fmt.Println(v, ok)
+	}
+
+	fmt.Println("map for range")
+	for k, v := range x {
+		fmt.Println(k, v)
 	}
 }

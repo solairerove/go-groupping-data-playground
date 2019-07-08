@@ -8,4 +8,5 @@ func main() {
 	group.ArrayExample()
 	group.SliceExample()
 	group.MapExample()
+	group.MapAddExample()
 }
